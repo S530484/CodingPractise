@@ -9,7 +9,7 @@ public class Palindrome {
 	{
 		System.out.println("Enter a string to check whether it is a palindrome or not: ");
 		scanner = new Scanner(System.in);
-		String str1=scanner.nextLine();
+		String str1=scanner.nextLine().toLowerCase();
 		String str2=str1;
 		
 		boolean chk=true;
@@ -46,7 +46,7 @@ public class Palindrome {
 			rev=rev*10+num%10;
 			num/=10;
 		}
-		System.out.println(temp +" "+rev);
+		//System.out.println(temp +" "+rev);
 		if(temp==rev)
 			System.out.println("It is a palindrome");
 		else
